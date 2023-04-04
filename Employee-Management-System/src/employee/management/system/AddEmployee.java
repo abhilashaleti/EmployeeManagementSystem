@@ -168,15 +168,18 @@ public class AddEmployee extends JFrame implements ActionListener{
                 JOptionPane.showMessageDialog(null, "Details added successfully");
                 setVisible(false);
                 new Home();
-            } catch (Exception e) {
+            } 
+            catch (Exception e)
+            {
                 e.printStackTrace();
             }
-        } else {
+        }
+        else 
+        {
             setVisible(false);
             new Home();
         }
     }
-
     public static void main(String[] args) {
         new AddEmployee();
     }

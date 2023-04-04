@@ -12,7 +12,7 @@ public class Home extends JFrame implements ActionListener{
         
         setLayout(null);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/home.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/ems.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1120, 630, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
@@ -20,7 +20,7 @@ public class Home extends JFrame implements ActionListener{
         add(image);
         
         JLabel heading = new JLabel("Employee Management System");
-        heading.setBounds(620, 20, 400, 40);
+        heading.setBounds(620, 20, 300, 40);
         heading.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(heading);
         

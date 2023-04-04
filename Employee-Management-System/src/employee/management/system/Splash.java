@@ -14,10 +14,10 @@ public class Splash extends JFrame implements ActionListener {
         JLabel heading = new JLabel("EMPLOYEE MANAGEMENT SYSTEM");
         heading.setBounds(80, 30, 1200, 60);
         heading.setFont(new Font("serif", Font.PLAIN, 60));
-        heading.setForeground(Color.RED);
+        heading.setForeground(Color.blue);
         add(heading);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/front.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/frontPage1.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1100, 700, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
@@ -47,7 +47,9 @@ public class Splash extends JFrame implements ActionListener {
             heading.setVisible(true);
             try {
                 Thread.sleep(500);
-            } catch (Exception e){
+            }
+            catch (Exception e)
+            {
                 
             }
         }
@@ -58,7 +60,8 @@ public class Splash extends JFrame implements ActionListener {
         new Login();
     }
     
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         new Splash();
     }
 }
