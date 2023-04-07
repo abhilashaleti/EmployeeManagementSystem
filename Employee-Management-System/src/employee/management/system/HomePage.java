@@ -4,11 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Home extends JFrame implements ActionListener{
+public class HomePage extends JFrame implements ActionListener{
 
     JButton view, add, update, remove;
     
-    Home() {
+    HomePage() {
         
         setLayout(null);
         
@@ -61,11 +61,11 @@ public class Home extends JFrame implements ActionListener{
             new ViewEmployee();
         } else {
             setVisible(false);
-            new RemoveEmployee();
+            new DeleteEmployee();
         }
     }
 
     public static void main(String[] args) {
-        new Home();
+        new HomePage();
     }
 }

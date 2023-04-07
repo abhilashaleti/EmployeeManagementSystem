@@ -167,7 +167,7 @@ public class AddEmployee extends JFrame implements ActionListener{
                 conn.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Details added successfully");
                 setVisible(false);
-                new Home();
+                new HomePage();
             } 
             catch (Exception e)
             {
@@ -177,7 +177,7 @@ public class AddEmployee extends JFrame implements ActionListener{
         else 
         {
             setVisible(false);
-            new Home();
+            new HomePage();
         }
     }
     public static void main(String[] args) {

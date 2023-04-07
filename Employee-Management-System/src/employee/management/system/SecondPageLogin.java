@@ -5,11 +5,11 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
-public class Login extends JFrame implements ActionListener{
+public class SecondPageLogin extends JFrame implements ActionListener{
     
     JTextField tfusername, tfpassword;
     
-    Login() {
+    SecondPageLogin() {
         
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -60,7 +60,7 @@ public class Login extends JFrame implements ActionListener{
             ResultSet rs = c.s.executeQuery(query);
             if (rs.next()) {
                 setVisible(false);
-                new Home();
+                new HomePage();
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid username or password");
                 setVisible(false);
@@ -71,6 +71,6 @@ public class Login extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args) {
-        new Login();
+        new SecondPageLogin();
     }
 }

@@ -5,12 +5,12 @@ import java.awt.*;
 import java.sql.*;
 import java.awt.event.*;
 
-public class RemoveEmployee extends JFrame implements ActionListener {
+public class DeleteEmployee extends JFrame implements ActionListener {
     
     Choice cEmpId;
     JButton delete, back;
     
-    RemoveEmployee() {
+    DeleteEmployee() {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
@@ -121,17 +121,17 @@ public class RemoveEmployee extends JFrame implements ActionListener {
                 c.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Employee Information Deleted Sucessfully");
                 setVisible(false);
-                new Home();
+                new HomePage();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else {
             setVisible(false);
-            new Home();
+            new HomePage();
         }
     }
 
     public static void main(String[] args) {
-        new RemoveEmployee();
+        new DeleteEmployee();
     }
 }

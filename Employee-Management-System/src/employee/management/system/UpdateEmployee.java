@@ -179,13 +179,13 @@ public class UpdateEmployee extends JFrame implements ActionListener{
                 conn.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Details updated successfully");
                 setVisible(false);
-                new Home();
+                new HomePage();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else {
             setVisible(false);
-            new Home();
+            new HomePage();
         }
     }
 
